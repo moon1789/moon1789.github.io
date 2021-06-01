@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Moon1789</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Moon1789's Personal Website">
+   </head>
+   <body onload="myFunction()" style="margin:0;">
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div id="loader"> </div> 
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <div class="logo_name">Moon_1789</div>
+      </div>
+      <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <a href="index.html">
+            <i class='bx bx-home' ></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="donate.html" target="_blank" rel="noopener">
+          <i class='bx bx-bitcoin' ></i>
+          <span class="links_name">Donate</span>
+        </a>
+        <span class="tooltip">Donate</span>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/channel/UC9izewtsA__dtENOC_nNkBA" target="_blank" rel="noopener">
+          <i class='bx bxl-youtube' ></i>
+          <span class="links_name">Youtube</span>
+        </a>
+        <span class="tooltip">Youtube</span>
+      </li>
+      <li>
+        <a href="https://github.com/moon1789" target="_blank" rel="noopener">
+          <i class='bx bxl-github' ></i>
+          <span class="links_name">Github</span>
+        </a>
+        <span class="tooltip">Github</span>
+      </li>
+      <li>
+        <a href="https://unsnaptic.com/" target="_blank" rel="noopener">
+          <i class='bx bx-music' ></i>
+          <span class="links_name">Music</span>
+        </a>
+        <span class="tooltip">Music</span>
+      </li> 
+      <li>
+        <a href="info.html" target="_blank" rel="noopener">
+          <i class='bx bx-user' ></i>
+          <span class="links_name">Info</span>
+        </a>
+        <span class="tooltip">Info</span>
+      </li> 
+    </ul>
+
+<div id="par"><b><span class="nobr">Welcome To Moon_1789's Website</span></b></div>
+<div id="info"> <span class="nobr">This Website is gonna be used for my testing purposes so yeah . <br> Hope You enjoy here, i dont have much things to entertain you here , <br>anyways see ya.</span>
+</div>
+
+<img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves" width=250 onclick="this.width+=10"/>
+
+
+
+
+</div>
+  <script>
+   let btn = document.querySelector("#btn");
+   let sidebar = document.querySelector(".sidebar");
+   let searchBtn = document.querySelector(".bx-search");
+
+   btn.onclick = function() {
+     sidebar.classList.toggle("active");
+     if(btn.classList.contains("bx-menu")){
+       btn.classList.replace("bx-menu" , "bx-menu-alt-right");
+     }else{
+       btn.classList.replace("bx-menu-alt-right", "bx-menu");
+     }
+   }
+   searchBtn.onclick = function() {
+     sidebar.classList.toggle("active");
+   }
+
+   var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+  </script>
+
+</body>
+</html>
