@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body {
+transition: 0.5 ease-in-out;
+background-image: url(memebg.png);
+font-family: poppins;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+  }
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding-left: 12%;
+    padding-right: 12%;
+    box-sizing: border-box;
+    background-color: transparent;
+    z-index: 2;
+}
+#bar{
+    list-style: none;
+    text-align: right;
+    color: aqua;
+}
+
+#bar li:first-child{
+    float: left; 
+    padding: 0;
+}
+#bar li {
+    padding-top: calc(6vh - 18px);
+    display: inline-block;
+    padding-left: 3%;
+    font-size: 18px;
+    color: aqua;
+}
+
+#bar :hover {
+  font-size: 20px;
+}
+
+#nav-logo{
+    transition: 0.3s ease;
+    margin-left: calc(6vh*-1);
+    margin-top: -6%;
+    width: 18vw;
+    height: 12vh;
+    background-image: url("nav-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#nav-logo:hover{
+    margin-top: 0;
+}
+
+#main-container{
+    height: 100vh;
+}
+#logo-container{
+    padding-top: calc(36vh - 30px);
+    width: 100%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: beige;
+}
+
+a :hover {
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+}
+
+#hg {
+color: burlywood;
+margin-top: 100px;
+margin-left: 20px;
+}
+
+#bacc {
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	transition: 0.1s;
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	cursor: pointer;
+}
+#bacc :hover {
+	letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+    <button onclick="back()">Click Here to Go Back</button>
+   
+
+<div id="hg">
+    <h1>Humm , so you wanna donate me?</h1>
+
+    <h2>Bitcoin : bc1qs0vg6a4plfqzhtg9nq0wgyltrv9ghlaymyug8q </h2>
+    <h2>Tron : THAM7LmhrsaDrQULdaKBsnKs6S537DiCAk </h2>
+    <h2>Ethereum : 0x31A1DF3654c2827E77e2426E88c9Ec22ab701D5A </h2>
+</div>
+<script>
+    function back() {
+        window.open("index.html")
+    }
+</script>
+</body>
+</html>
