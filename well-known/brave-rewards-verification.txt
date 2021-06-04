@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: moon1789.github.io
+Token: 33b5fb444874fca36a42d975495d520ec63469dfdac56d39d6536d76d6a6ad9c
