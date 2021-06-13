@@ -206,3 +206,8 @@ img :hover {
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
+
+::selection{
+        color:#250feb;
+        background:transparent;
+    }
