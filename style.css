@@ -168,6 +168,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color: blanchedalmond;
 border-color: transparent;
 cursor: pointer;
+position : fixed
 }
 
 input {
