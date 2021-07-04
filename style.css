@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+
+html {
+    scroll-behavior: smooth;
+    align-self: center;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.element::-webkit-scrollbar { width: 0 !important }
+
+
+
+
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    align-self: center;
+    font-family: poppins;
+    margin: 0;
+    background-image: url(bg.png);
+    background-color: #151D21;
+}
+
+#copyright{
+    font-family: poppins;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+    color: #eeeeee;
+    background-color: transparent;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: poppins;
+}
+
+a:hover {
+    color: #6d62ff;
+}
+
+header .logo  {
+	background-image: url("logo.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 110px;
+	width: 111px;
+	text-indent: -999999px;
+	position: relative;
+    top: -30px;
+    margin-left: 0px;
+}
+
+
+
+
+li:first-child {
+    float: left; 
+}
+
+li {
+    display: inline-block;
+    padding-right: 4%;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.topnav {
+    list-style: none;
+    color: aliceblue;
+    text-align: right;
+    font-size: 10px;
+    position: relative;
+}
+
+section header {
+    margin-top: 0px;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.player {
+    font-family: poppins;
+}
+
+section {
+    text-align: center;
+    padding: 14%;
+}
+
+section nav {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+section .mybutton {
+    font-family: quicksand;
+    font-size: 24px;
+    color: #576064;
+    background: transparent;
+    display: inline-flex;
+    padding: 6px;
+    margin-top: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border-width: 2px;
+    border-color: #ff7a7a;
+    border-style: solid;
+}
+
+section .mybutton:hover {
+    border-color: #ff7a7a;
+    box-shadow: 0 0 8px #ff7a7a;
+    color: whitesmoke;
+}
+
+section .mybuttonxd {
+    font-family: quicksand;
+    font-size: 24px;
+    color: rgb(163, 163, 163);
+    background: #2248f1;
+    display: inline-flex;
+    padding: 6px;
+    margin-top: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+section .mybuttonxd:hover {
+    border-color: #2248f1;
+    box-shadow: 0 0 8px #2248f1;
+    color: whitesmoke;
+}
+
+.par {
+   top: 8%;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(48, 68, 247);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.2s ease;
+  }
+  
+  #myBtn:hover {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgb(48, 68, 247);
+  }
+
+.link {
+    color: rgb(61, 61, 255);
+    cursor: pointer;
+}
+
+::selection {
+    color: #212e35;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 0;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    section nav {
+        font-size: 12px;
+        line-height: 20px;
+        align-self: center;
+    }
+
+    section .mybutton {
+        font-size: 12px;
+        align-self: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    section .mybutton:hover {
+        border-color: #ff7a7a;
+        box-shadow: 0 0 8px #ff7a7a;
+    }
+
+    section .mybuttonxd {
+        font-size: 16px;
+        align-self: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+    #myBtn {
+        font-size: 12px;   
+    }
+
+    li {
+        position: relative;
+        top: auto;
+        max-height:inherit;  
+    }
+
+    header .logo a {
+        margin-left: 10px; 
+     }
+
+     section {
+        text-align: center;
+        padding: 30%;
+    }
+
+
+}
