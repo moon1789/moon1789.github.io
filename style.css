@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 * {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
-    height: 100%;
     background-color: coral;
     position: absolute;
     margin: 0;
@@ -17,14 +19,14 @@ body {
 );
 }
 .title {
-    font-family: poppins;
+    font-family: ubuntu;
 }
-.subtitle {
+#sub {
     font-family: quicksand;
 }
 #menu {
     position: fixed;
-    bottom: 0vh;
+    bottom: -20vh;
     margin: 0;
     padding-top: 10px;
     width: 100%;
@@ -36,9 +38,12 @@ body {
     z-index: 1;
     transition: 0.5s ease;
 }
+#menu:hover {
+    background-color: #272627; 
+}
 #ha {
     position: fixed;
-    bottom: 0;
+    bottom: -20vh;
     color: #555;
     font-size: 40px;
     transition: 0.25s ease;
@@ -50,7 +55,7 @@ body {
     border-radius: 100px;
 }
 #home {
-    color: #555;
+    color: ivory;
     transition: 0.25s ease;
     margin-left: 10px;
     margin-right: 10px;
@@ -60,8 +65,42 @@ body {
     border-radius: 100px;
     padding: 4px;
     cursor: pointer;
+    color: #555;
 }
-
+#header {
+    position: relative;
+    top: -70vh;
+    transition: 1s ease;
+}
+#text1 {
+    position: relative;
+    top: 20vh;
+}
+#text2 {
+    position: relative;
+    top: 22vh;
+    font-size: 40px;
+    color: #555;
+    transition: 0.5s ease;
+}
+#text2:hover{
+    background-color: #555;
+    color: ivory;
+    padding: 10px;
+    border-radius: 100px;
+}
+#text3 {
+    position: relative;
+    font-size: 40px;
+    color: #555;
+    transition: 0.5s ease;
+}
+#text3:hover{
+    background-color: #555;
+    color: ivory;
+    padding: 10px;
+    border-radius: 100px;
+}
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
@@ -76,4 +115,34 @@ body {
 a {
     text-decoration: none;
     color: #555;
+}
+#two {
+    position: relative;
+    top: 70vh;
+}
+#three {
+    position: relative;
+    top: 140vh;
+}
+#myBtn {
+    display: block;
+    position: fixed;
+    bottom: 66px;
+    right: -40vh;
+    z-index: 99;
+    font-size: 40px;
+    cursor: pointer;
+    color: ivory;
+    background: none;
+    border: none;
+    transition: 0.5s ease;
+  }
+  
+  #myBtn:hover {
+   color: #555;
+   background-color: ivory;
+   border-radius: 100px;
+  }
+#aboi:hover {
+    color: cornflowerblue;
 }

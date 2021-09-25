@@ -20,30 +20,42 @@
 </head>
 <style>
     html {
-        overflow: hidden;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     body {
-        height: 100%;
+        height: 320%;
     }
 </style>
 
-<body onload="menu()">
+<body onload="port()">
     <center>
-        <header id="header">
-            <div class="section">
-                <div class="title is-2" id="moon">Moon1789 AKA Moon_1789 </div>
-                <div class="conatiner">
-                    <div id="sub" class="subtitle is-5">Professional Idiot , Dumb , depressed.</div>
+        <div id="topa" class="section conatiner">
+            <div class="title is-1" id="text1">Moon1789's Portfolio</div>
+            <a href="#two"><i id="text2" class='bx bxs-down-arrow'></i></a>
+        </div>
+        <div id="two" class="section container">
+            <div class="title is-3" id="hello"></div>
+            <div class="container">
+                <div class="subtitle is-4">Hi! , I am a Student , Web Dev , Linux Admin , Casual Gamer, Tech Enthusiast,
+                    & Hardware Novice. You may know me by Moon1789 , Moon_1789 , Moonie or Akhil. I mostly do
+                    Programming , but I am also interested in video
+                    editing ,
+                    photoediting , graphic designs, music and gaming.</div>
+                <a href="#three"><i id="text3" class='bx bxs-down-arrow'></i></a>
+            </div>
+        </div>
+        <div id="three" class="section container">
+            <div class="title is-3">Contact Me</div>
+            <div class="container">
+                <div class="subtitle is-4">You can contact me via <a id="aboi"
+                        href="mailto:moon1789.test@outlook.com">e-mail</a>
+                    or
+                    <a id="aboi" target="_blank" href="https://matrix.to/#/@moon1789x:matrix.org">Matrix</a>
                 </div>
             </div>
-            <div class="section">
-                <div id="sub" class="title is-3">Random Quotes To Make You Happy :)</div>
-                <div class="container">
-                    <div id="text" class="subtitle is-5">Well the quote system has an error :(</div>
-                </div>
-            </div>
-        </header>
+        </div>
     </center>
     <div id="menu" class="menu">
         <center>
@@ -55,6 +67,9 @@
             <a href="port.html"><i id="home" class='bx bx-user'></i></a>
             <a><i id="home" class='bx bxs-down-arrow' onclick="down()"></i></a>
         </center>
+    </div>
+    <div class="top">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bxs-up-arrow'></i></button>
     </div>
     <div class="ha">
         <i id="ha" class='bx bxs-up-arrow' onclick="up()"></i>

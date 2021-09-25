@@ -1,0 +1,16 @@
+{
+    "name": "Moon1789's Website",
+    "short_name": "Moon1789",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "coral",
+    "theme_color": "khaki",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "favicon.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        }
+    ]
+}
