@@ -1,0 +1,1 @@
+Image viewer : http://lxde.sourceforge.net/gpicview/ or suckless one
